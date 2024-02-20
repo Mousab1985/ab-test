@@ -3,7 +3,7 @@ function App() {
   const [visitor, setVisitor] = useState(0);
   useEffect(() => {
     const randomizeVisitor = Math.random();
-    console.log(randomizeVisitor);
+    
     if (randomizeVisitor > 0.5) {
       setVisitor(1);
     }
@@ -29,7 +29,7 @@ function App() {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-        <button type="submit" onClick={handleClick}>
+        <button style={{backgroundColor: 'blue', color: 'white'}} type="submit" onClick={handleClick}>
           Sign Up
         </button>
     </>
